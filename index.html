@@ -1,19 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYYR LLC - Official Website</title>
     <style>
-        body { text-align: center; padding: 50px; }
-        img { max-width: 300px; border-radius: 10px; }
-        h1 {
-          color: #2d3748; /* Dark gray */
-          font-size: 2.5rem;
-          text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .logo {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        
+        .main-text {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            color: #333;
+            line-height: 1.4;
+            max-width: 600px;
+        }
+        
+        .footer {
+            margin-top: auto;
+        }
+        
+        .footer-text {
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                max-width: 300px;
+            }
+            
+            .main-text {
+                font-size: 20px;
+            }
+            
+            .footer-text {
+                font-size: 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo {
+                max-width: 250px;
+            }
+            
+            .main-text {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
 <body>
-  <img src="logo.jpeg" alt="My Photo">
-  <h1>Welcome ish knats!!</h1>
+    <div class="header">
+        <img src="logo.jpeg" alt="MYYR LLC Logo" class="logo" id="logo">
+        
+        <div class="main-text">
+            Welcome to the Official Website for MYYR LLC<br>
+            More Coming Soon
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-text">
+            #BAGZ
+        </div>
+    </div>
+
+    <script>
+        // Logo is set to logo.jpeg in the HTML above
+        // Make sure logo.jpeg is in the same folder as this HTML file
+    </script>
 </body>
 </html>
